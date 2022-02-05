@@ -7,7 +7,7 @@ export const greeting = () => {
 };
 
 export const randomNumber = () => {
-  const random = Math.floor(Math.random() * 100); // доделать для любых положительных чисел
+  const random = Math.floor(Math.random() * 15); // доделать для любых положительных чисел
   return random;
 };
 
@@ -34,7 +34,6 @@ export const randomOperator = () => {
       break;
     }
     default: break;
-    // console.log(operator);
   }
   return [result, returnString];
 };
@@ -46,7 +45,6 @@ export const gameCalc = (name) => {
     console.log('What is the result of the expression?');
     console.log(`Question: ${returnString}`);
     const answer = Number.parseInt(readlineSync.question('Your answer: '), 10);
-    console.log(typeof (answer));
     if (answer === result) {
       console.log('Correct!');
     } else {
