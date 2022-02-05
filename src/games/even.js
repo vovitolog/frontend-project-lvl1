@@ -33,7 +33,6 @@ export const gameEven = (name) => {
     const answer = readlineSync.question('Your answer: ');
     if (answer === requestedAnswer) {
       console.log('Correct!');
-    // gameRound += 1;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${requestedAnswer}'.\nLet's try again, ${name}!`);
       break;
